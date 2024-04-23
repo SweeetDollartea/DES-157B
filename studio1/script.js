@@ -77,13 +77,7 @@
         }
     })
 
-    // document.addEventListener('DOMContentLoaded', function() {
-    //     const audio = document.getElementById('audio');
-    //     document.body.addEventListener('click', function() {
-    //         audio.play();
-    //     });
-    // });
-    
+
     
 
 
