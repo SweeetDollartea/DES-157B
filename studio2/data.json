@@ -1,0 +1,30 @@
+{
+    "Monday" : {
+        "Morning" : "Friendly Pressure - Into The Sunshine Mix by Sunship & Jhelisa",
+        "Night" : "It Makes You Forget (Itgehane) by Peggy Gou"
+    }, 
+    "Tuesday" : {
+        "Morning" : "Rise Above it by Chris Stussy",
+        "Night" : "Keep Movin’ by Ricky Razu"
+    }, 
+    "Wednesday" : {
+        "Morning" : "Lauren (I Can’t Stay Forever) by Oden & Fatzo",
+        "Night" : "Greatest Love - Edit by Dj Streaks"
+    }, 
+    "Thursday" : {
+        "Morning" : "Easy by Cody Currie & Ally McMahon",
+        "Night" : "Both of Us by Jayda G"
+    }, 
+    "Friday" : {
+        "Morning" : "Magalenha by Joshwa",
+        "Night" : "Izinqe - Alessio Cala’ Remix by Angelo Ferreri, Alessio Cala’"
+    }, 
+    "Saturday" : {
+        "Morning" : "Love Shy - Subjoi’s Tuff Jam Rework by Subjoi",
+        "Night" : "Does it Make You Feel Good? by Confidence Man"
+    }, 
+    "Sunday" : {
+        "Morning" : "Sunchyme - Radio Edit by Dario G",
+        "Night" : "NO8DO by Mochakk & Fernanda Ouro"
+    }
+}

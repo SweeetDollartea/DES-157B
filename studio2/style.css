@@ -1,0 +1,74 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background : linear-gradient(
+        to right,
+        #3E418D 0%, 
+        #3E418D 35%,
+        #FFEBF6 35%,
+        #FFEBF6 100%
+    );
+}
+
+#left h1{
+    display: flex;
+    transform: translate(5%, 90%);
+
+    font-size: 350%;
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#left h2{
+    display: flex;
+    transform: translate(14%, 33%);
+    
+    text-align: center;
+    line-height: 200%;
+    font-size: 200%;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img{
+display: flex;
+transform: translate(175%,-130%);
+
+}
+
+
+
+#right h1{
+    display: flex;
+    text-align: center;
+    transform: translate(48%,50%);
+
+    font-size: 250%;
+    color: rgb(0, 0, 0);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#right h2{
+    display: flex;
+    text-align: center;
+    transform: translate(61%,50%);
+    line-height: 200%;
+    font-size: 180%;
+    color: rgb(0, 0, 0);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
