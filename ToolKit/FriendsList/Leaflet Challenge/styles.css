@@ -1,0 +1,7 @@
+#map {
+    align-items: center;
+    display: flex;
+    margin-top: 150px;
+    height: 500px; 
+    width: auto;
+}
