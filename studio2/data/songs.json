@@ -1,0 +1,44 @@
+{
+    "Monday" : {
+        "Morning" : "Friendly Pressure - Into The Sunshine Mix by Sunship & Jhelisa",
+        "img1": "images/FriendlyPressureWUT.jpeg",
+        "Night" : "It Makes You Forget (Itgehane) by Peggy Gou",
+        "img2": "images/ItMakesYouForget.jpeg"
+    }, 
+    "Tuesday" : {
+        "Morning" : "Rise Above it by Chris Stussy",
+        "img1": "images/RiseAboveit.jpeg",
+        "Night" : "Keep Movin’ by Ricky Razu",
+        "img2":"images/KeepMovin’.jpeg"
+    }, 
+    "Wednesday" : {
+        "Morning" : "Lauren (I Can’t Stay Forever) by Oden & Fatzo",
+        "img1": "images/Lauren(I Can’t Stay Forever).png",
+        "Night" : "Greatest Love - Edit by Dj Streaks",
+        "img2":"images/GreatestLove .jpeg"
+    }, 
+    "Thursday" : {
+        "Morning" : "Easy by Cody Currie & Ally McMahon",
+        "img1": "images/Easy.jpeg",
+        "Night" : "Both of Us by Jayda G",
+        "img2": "images/BothofUs.jpeg"
+    }, 
+    "Friday" : {
+        "Morning" : "Magalenha by Joshwa",
+        "img1":"images/Magalenha.jpeg",
+        "Night" : "Izinqe - Alessio Cala’ Remix by Angelo Ferreri, Alessio Cala’",
+        "img2":"images/Izinqe.jpg"
+    }, 
+    "Saturday" : {
+        "Morning" : "Love Shy - Subjoi’s Tuff Jam Rework by Subjoi",
+        "img1": "images/Love Shy.jpeg",
+        "Night" : "Does it Make You Feel Good? by Confidence Man",
+        "img2": "images/DoesitMakeYouFeelGood?.jpeg"
+    }, 
+    "Sunday" : {
+        "Morning" : "Sunchyme - Radio Edit by Dario G",
+        "img1":"images/Sunchyme.jpeg",
+        "Night" : "NO8DO by Mochakk & Fernanda Ouro",
+        "img2": "images/NO8DO.jpg"
+    }
+}

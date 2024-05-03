@@ -27,7 +27,7 @@ body{
 
 #left h2{
     display: flex;
-    transform: translate(14%, 33%);
+    transform: translate(14%, 180%);
     
     text-align: center;
     line-height: 200%;
@@ -72,3 +72,5 @@ transform: translate(175%,-130%);
     font-weight: 400;
     font-style: normal;
 }
+
+
