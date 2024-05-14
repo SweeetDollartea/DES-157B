@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(187, 220, 188);
+}
+
+.tap-target {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 16em;
+    height: 16em;
+    padding: 1em;
+    margin: 1rem auto;
+    box-sizing: border-box;
+  
+    border-radius: 100%;
+  
+    font-size: 1.125em;
+    text-align: center;
+    color: #fff;
+    background-color: #29e;
+  
+    cursor: pointer;
+    touch-action: none;
+    user-select: none;
+  
+    transition: all 0.3s;
+  }
+  
+#test{
+    text-align: center;
+    margin-top: 40%;
+    border-style: dotted; 
+    border-width: 5px; 
+    width: 30%;
+    transform: translate(30%,0%);
+}
+
+#myChart{
+    transform: translate(-80%,90%);
+}
+

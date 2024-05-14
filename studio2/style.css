@@ -79,26 +79,22 @@ transform: translate(175%,-130%);
 }
 
 #monSongImagemorn{
-    display: relative;
     margin-top: 5%;
     transform: translate(160%,-160%);
     scale: 80%;
 }
 
 #monSongImagenight{
-    display: relative;
     margin-top: 5%;
     scale: 58%;
     transform: translate(250%,-330%);
 }
 
 #mondaymornsong{
-    display: relative;
     font-size: 120%;
     margin-left: 35%;
 }
 #mondaynightsong{
-    display: relative;
     font-size: 120%;
     margin-left: 2%;
 }
@@ -108,25 +104,21 @@ transform: translate(175%,-130%);
 }
 
 #tuesSongImagemorn{
-    display: relative;
     scale: 68%;
     transform: translate(150%,-140%);
 
 }
 #tuesSongImagenight{
-    display: relative;
     scale: 68%;
     transform: translate(270%,-287%);
 }
 
 #tuesdaymornsong{
-    display: relative;
     font-size: 120%;
     margin-left: 45%;
 }
 
 #tuesdaynightsong{
-    display: relative;
     font-size: 120%;
     margin-left: 13%;
 }
@@ -136,7 +128,6 @@ transform: translate(175%,-130%);
 }
 
 #Wednesdaymornsong{
-    display: relative;
     scale: 68%;
     transform: translate(150%,200%);
     margin-left: 42%;
@@ -144,7 +135,6 @@ transform: translate(175%,-130%);
 }
 
 #Wednesdaynightsong{
-    display: relative;
     scale: 68%;
     transform: translate(270%,-287%);
     margin-left: 6%;
@@ -152,13 +142,11 @@ transform: translate(175%,-130%);
 }
 
 #wedSongImagemorn{
-    display: relative;
     scale: 35%;
     transform: translate(80%,-210%);
 }
 
 #wedSongImagenight{
-    display: relative;
     scale: 70%;
     transform: translate(270%,-425%);
 }
@@ -168,7 +156,6 @@ transform: translate(175%,-130%);
 }
 
 #Thursdaymornsong{
-    display: relative;
     scale: 68%;
     transform: translate(150%,200%);
     margin-left: 43%;
@@ -176,7 +163,6 @@ transform: translate(175%,-130%);
 }
 
 #Thursdaynightsong{
-    display: relative;
     scale: 68%;
     transform: translate(270%,-287%);
     margin-left: 14%;
@@ -184,13 +170,11 @@ transform: translate(175%,-130%);
 }
 
 #thursSongImagemorn{
-    display: relative;
     scale: 46%;
     transform: translate(130%,-178%);
 }
 
 #thursSongImagenight{
-    display: relative;
     scale:55%;
     transform: translate(275%,-370%);
 }
@@ -200,7 +184,6 @@ transform: translate(175%,-130%);
 }
 
 #Fridaymornsong{
-    display: relative;
     scale: 68%;
     transform: translate(150%,200%);
     margin-left: 49%;
@@ -208,7 +191,6 @@ transform: translate(175%,-130%);
 }
 
 #Fridaynightsong{
-    display: relative;
     scale: 68%;
     transform: translate(270%,-287%);
     margin-left: 6%;
@@ -216,13 +198,11 @@ transform: translate(175%,-130%);
 }
 
 #friSongImagemorn{
-    display: relative;
     scale: 71%;
     transform: translate(150%,-140%);
 }
 
 #friSongImagenight{
-    display: relative;
     scale:70%;
     transform: translate(275%,-285%);
 }
@@ -232,27 +212,23 @@ transform: translate(175%,-130%);
 }
 
 #Saturdaymornsong{
-    display: relative;
     scale: 68%;
     margin-left: 41%;
     font-size: 120%;
 }
 
 #Saturdaynightsong{
-    display: relative;
     scale: 68%;
     margin-left: 2%;
     font-size: 120%;
 }
 
 #satSongImagemorn{
-    display: relative;
     scale: 50%;
     transform: translate(120%,-170%);
 }
 
 #satSongImagenight{
-    display: relative;
     scale:54%;
     transform: translate(250%,-366%);
 }
@@ -262,27 +238,23 @@ transform: translate(175%,-130%);
 }
 
 #Sundaymornsong{
-    display: relative;
     scale: 68%;
     margin-left: 43%;
     font-size: 120%;
 }
 
 #Sundaynightsong{
-    display: relative;
     scale: 68%;
     margin-left: 9%;
     font-size: 120%;
 }
 
 #sunSongImagemorn{
-    display: relative;
     scale: 57%;
     transform: translate(120%,-154%);
 }
 
 #sunSongImagenight{
-    display: relative;
     scale:26%;
     transform: translate(130%,-435%);
 }
