@@ -1,11 +1,15 @@
 body{
     display: flex;
     justify-content: center;
-    background-color: rgb(187, 220, 188);
+    background-color: rgb(12, 40, 75);
+    max-width: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; 
 }
 
 .tap-target {
-    display: flex;
+    position: flex;
     flex-direction: column;
     justify-content: center;
     width: 16em;
@@ -28,16 +32,40 @@ body{
     transition: all 0.3s;
   }
   
+
+#img{
+    position: relative;
+    scale: 40%;
+    margin-top: -30%;
+    transform: translate(30%, 0%);
+}
+
+#img h1{
+    position: relative;
+    font-size:400%;
+    color: white;
+}
+
 #test{
-    text-align: center;
-    margin-top: 40%;
+    margin-top: -10%;
     border-style: dotted; 
     border-width: 5px; 
     width: 30%;
-    transform: translate(30%,0%);
+    color:white;
+    transform: translate(120%,0%);
+    height:20%;
 }
 
 #myChart{
-    transform: translate(-80%,90%);
+    position: relative;
+    scale: 70%;
+    margin-top: 20%;
 }
+
+#myChart2{
+    position: relative;
+    scale: 70%;
+    margin-top: 20%;
+}
+
 
