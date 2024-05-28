@@ -9,7 +9,7 @@ body{
 }
 
 .tap-target {
-    position: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     width: 16em;

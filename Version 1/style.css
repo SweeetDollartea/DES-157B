@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+html, main{
+    width: 100%;
+    height: 100%;
+}
+
+/* .header{
+    height: 20vh;
+    background-color: blue;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    color: white;
+} */
+
+section{
+    height: 100vh;
+}
+
+.containers{
+    background: pink;
+    height: 100vh;
+}
+
+.firsttext{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    font-size: larger;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;  
+    width: auto;         
+    height: 100vh;
+    white-space: nowrap; 
+}
+
+.smartphone{
+    display: flex;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    height: 100vw;
+    scale: 30%;
+}
+
+.smartphoneinside{
+    display: flex;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(5%,-5%);
+    height: 100vw;
+    scale: 30%;
+
+
+}
