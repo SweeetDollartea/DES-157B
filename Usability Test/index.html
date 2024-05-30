@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project Version 1</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">    
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/+esm" defer></script>
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js" defer></script> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+
+
+
+    <script src="script.js" defer></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <main>
+
+        <div id="overlay" onclick="off()">
+            <div id="text">hello, welcome to my page. This website talk about REE. The point of this website to have a scroll responsive 
+                design where the user can scroll through to understand more information. This is a rough prototype of what my overall website
+                would look like. I would like to know if the experience so far is easy or hard digest.
+                <br>
+                I am a planning to add more animations on specific texts using GSAP, but that is still a work in progress. 
+                After the chart, I am planning to add more graphs, more images of what companies are contributing to the mining, and the future 
+                state of how companies would operate without REE and the effort they are putting in.
+                <br>
+                Question:<br>
+                Are some animations or scroll features confusing you?<br>
+                What do you think could be improved in terms of design and the overal style?<br>
+                What other features do you think could be implemented to make it more interactive?
+
+            </div>
+        </div>
+        <div><button onclick="on()">Click me</button></div>
+
+
+    <div class = "initial">
+        <h1 class="firsttext">Imagine a smartphone</h1> 
+    </div>
+
+    <div class="containers">
+        <section class = "lot 2">
+            <img class="smartphone" src="Images/iphone15.png" alt="smartphone">
+        </section>
+
+        <section class = "lot 3">
+            <img class="smartphoneinside" src="Images/DES 157B Visual Design.jpg" alt="smartphone2">
+        </section>
+
+        <section class = "lot 4">
+            <img class="smartphoneinside1" src="Images/DES 157B Visual Design1.png" alt="smartphone3">
+        </section>
+    </div>
+
+    <div class="REEex">
+        <img class="REE" src="Images/REE.jpeg" alt="REE">
+        <h2>These are made up of Rare Earth Elements (REE)</h2>
+        <h1>What is an REE and why does it matter?</h1>
+    </div>
+
+    <div class= "REEinfo">
+        <div data-aos="fade-up" data-aos-duration="3000">
+        <h2>A Rare Earth Elements, represented in the periodic table, is a group of 17 metallic elements, also known as rare earth oxides or lanthanides.
+        They are significant components of devices we use in our everyday lives. These include smart phones, eletric cars, batteries, and wind turbines.
+        They are essentially the bottom of the supply chain for Apple, Samsung, Tesla and even more. They are called "rare", but there is actually an abundance of these elements, only rare to extract them.
+        </h2>
+        </div>
+    </div>
+
+    <section class = "section1">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </section>
+
+    <section class = "section1">
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+    </section>
+
+    <div class= "REEmining">
+        <div data-aos="fade-right" data-aos-duration="3000">
+        <h2>A Rare Earth Elements, represented in the periodic table, is a group of 17 metallic elements, also known as rare earth oxides or lanthanides.
+        They are significant components of devices we use in our everyday lives. These include smart phones, eletric cars, batteries, and wind turbines.
+        They are essentially the bottom of the supply chain for Apple, Samsung, Tesla and even more. They are called "rare", but there is actually an abundance of these elements, only rare to extract them.
+        </h2>
+        </div>
+    </div>
+
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+
+
+
+    <script>
+    function on() {
+    document.getElementById("overlay").style.display = "block";
+    }
+
+    function off() {
+    document.getElementById("overlay").style.display = "none";
+    }
+    </script>
+
+    </main>
+
+
+</body>
+</html>
+
+
+
+

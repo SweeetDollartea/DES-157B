@@ -7,6 +7,16 @@ body{
     overflow-x: hidden;
 }
 
+html, body{
+    width: 100%;
+    scroll-behavior: none;
+    min-width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 html, main{
     width: 100%;
     height: 100%;
@@ -24,15 +34,6 @@ html, main{
     color: white;
 } */
 
-section{
-    height: 100vh;
-}
-
-.containers{
-    background: pink;
-    height: 100vh;
-}
-
 .firsttext{
     display: flex;
     align-items: center;
@@ -44,8 +45,22 @@ section{
 
     font-size: larger;
 }
+.initial{
+    height: 100vh;
+}
 
-.container2 {
+
+.containers{
+    background: rgb(255, 255, 255);
+    height: 100vh;
+
+    width: 400%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.lot2{
     display: flex;
     flex-direction: row;
     overflow-x: scroll;  
@@ -57,20 +72,196 @@ section{
 .smartphone{
     display: flex;
     margin: 0;
-    top: 50%;
-    left: 50%;
     height: 100vw;
-    scale: 30%;
+    scale: 35%;
+    transform: translate(0%,-65%);
+}
+
+.lot3{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;  
+    width: auto;         
+    height: 100vh;
+    white-space: nowrap; 
 }
 
 .smartphoneinside{
     display: flex;
     margin: 0;
+    transform: translate(0%,-55%);
+    height: 100vw;
+    scale: 40%;
+}
+
+.lot4{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;  
+    width: auto;         
+    height: 100vh;
+    white-space: nowrap; 
+}
+
+.smartphoneinside1{
+    display: flex;
+    margin: 0;
+    transform: translate(-180%,0%);
+    height: 100vh;
+    scale: 65%;
+}
+
+/* .REEex{
+    display: flex;
+    height: 100vh;
+    background-color: rgb(32, 46, 110);
+    justify-content: center;    
+    display: grid;
+}
+
+.REEex h2{
+    color: white;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 150%;
+}
+
+.REEex h1{
+    color: white;
+    font-size: larger;
+    text-align: center;
+    margin-top: -20%;
+    font-size: 200%;
+
+} */
+
+.REEex{
+    display: flex;
+    height: 100vh;
+    justify-content: center;    
+}
+
+.REEex h2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20%;
+    font-size: 150%;
+    float: right;
+    transform: translate(30%,-10%);
+}
+
+.REEex h1{
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    text-align: center;
+    font-size: 200%;
+    float: right;
+    transform: translate(-70%,50%);
+}
+
+.REE{
+    display: flex;
+    float: left;
+    scale: 70%;
+}
+
+.REEinfo{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(34, 34, 114);
+}
+
+.REEinfo h2{
+    color: white;
+    width: 40%;
+    transform: translate(65%, 75%);
+    border-style:solid;
+    border-radius: 10%;
+    padding: 2%;
+}
+
+.section1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.gallery{
+    height: 200vh;
+}
+
+.img{
+    width: 100%;
+    height:100%;
+    position: relative;
+    background-size: cover;
+    z-index:-1;
+
+    &:nth-of-type(1) {background-image: url('Images/REEmine1.jpeg');}
+    &:nth-of-type(2) {background-image: url('Images/REEmine2.jpeg');}
+    &:nth-of-type(3) {background-image: url('Images/REEmine3.png');}
+    &:nth-of-type(4) {background-image: url('Images/REEmine4.jpeg');}
+    &:nth-of-type(5) {background-image: url('Images/REEmine5.jpeg');}
+    &:nth-of-type(6) {background-image: url('Images/REEmine6.jpeg');}
+    &:nth-of-type(7) {background-image: url('Images/REEmine7.jpeg');}
+    &:nth-of-type(8) {background-image: url('Images/REEmine8.jpeg');}
+    &:nth-of-type(9) {background-image: url('Images/REEmine9.jpeg');}
+
+
+    &:before{
+        content:'';
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        z-index:4;
+        top: 0;
+        left: 0;
+    }
+}
+
+.REEmining{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(34, 34, 114);
+}
+
+.REEmining h2{
+    color: white;
+    width: 40%;
+    transform: translate(65%, 75%);
+    border-style:solid;
+    border-radius: 10%;
+    padding: 2%;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+
+
+  #text{
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(5%,-5%);
-    height: 100vw;
-    scale: 30%;
+    font-size: 20px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
 
+#myChart{
+    position: relative;
+    scale: 70%;
+    margin-top: 20%;
+    height: 100vh;
 
 }
