@@ -87,50 +87,63 @@
 
 
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
       AOS.init();
 
-      gsap.registerPlugin(ScrollTrigger);
 
-      const lenis = new Lenis({
-        duration: 3,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
-      })
+
+
+
+      let photo = gsap.utils.toArray('.photo');
     
-      function raf(time) {
-          lenis.raf(time)
-          requestAnimationFrame(raf)
-      }
+      gsap.to(photo, {
+          xPercent: -100 * (photo.length - 1),
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".photogallery",
+            pin: true,
+            scrub: 1,
+            snap: 1 / (photo.length - 1),
+            end: () => "+=" + document.querySelector(".photogallery").offsetWidth
+          }
+        });
+
+
+
+
+
+
+
+
+      // const lenis = new Lenis({
+      //   duration: 3,
+      //   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+      // })
     
-      requestAnimationFrame(raf)
+      // function raf(time) {
+      //     lenis.raf(time)
+      //     requestAnimationFrame(raf)
+      // }
+    
+      // requestAnimationFrame(raf)
       
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: '.img',
-          scrub: true,
-          start: "top 60%",  
-          end: "bottom 20%",
-        }
-      })
-      .to('.img', {
-        stagger: 0.2,
-        y: -700,
-        scrub: 1
-      })
+      // const tl = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: '.img',
+      //     scrub: true,
+      //     start: "top 60%",  
+      //     end: "bottom 20%",
+      //   }
+      // })
+      // .to('.img', {
+      //   stagger: 0.2,
+      //   y: -700,
+      //   scrub: 1
+      // })
       
+
+
+
+    
 
       const ctx = document.getElementById('myChart');
 

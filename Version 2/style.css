@@ -251,15 +251,7 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
+/* 
 .REE{
     display: flex;
     float: left;
@@ -280,11 +272,26 @@ body {
     border-style:solid;
     border-radius: 10%;
     padding: 2%;
+} */
+
+
+
+
+.photo1{
+    width:2%;
+    height: auto;
+}
+.photo2{
+    width:2%;
+    height: auto;
 }
 
-.section1{
+
+
+
+/* .section1{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     height: 100vh;
     margin: 0 auto;
 }
@@ -320,7 +327,15 @@ body {
         top: 0;
         left: 0;
     }
-}
+} */
+
+
+
+
+
+
+
+
 
 .REEmining{
     display: flex;

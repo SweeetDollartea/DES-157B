@@ -1,0 +1,362 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+html, body{
+    width: 100%;
+    scroll-behavior: none;
+    min-width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html, main{
+    width: 100%;
+    height: 100%;
+}
+
+/* .header{
+    height: 20vh;
+    background-color: blue;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    color: white;
+} */
+
+.firsttext{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    font-size: larger;
+}
+.initial{
+    height: 100vh;
+}
+
+
+.containers{
+    background: rgb(255, 255, 255);
+    height: 100vh;
+
+    width: 400%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.lot2{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;  
+    width: auto;         
+    height: 100vh;
+    white-space: nowrap; 
+}
+
+.smartphone{
+    display: flex;
+    margin: 0;
+    height: 100vw;
+    scale: 35%;
+    transform: translate(0%,-65%);
+}
+
+.lot3{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;  
+    width: auto;         
+    height: 100vh;
+    white-space: nowrap; 
+}
+
+.smartphoneinside{
+    display: flex;
+    margin: 0;
+    transform: translate(0%,-55%);
+    height: 100vw;
+    scale: 40%;
+}
+
+.lot4{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;  
+    width: auto;         
+    height: 100vh;
+    white-space: nowrap; 
+}
+
+.smartphoneinside1{
+    display: flex;
+    margin: 0;
+    transform: translate(-180%,0%);
+    height: 100vh;
+    scale: 65%;
+    margin: 0;
+}
+
+/* .REEex{
+    display: flex;
+    height: 100vh;
+    justify-content: center;    
+}
+
+.REEex h2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20%;
+    font-size: 150%;
+    float: right;
+    transform: translate(30%,-10%);
+}
+
+.REEex h1{
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    text-align: center;
+    font-size: 200%;
+    float: right;
+    transform: translate(-70%,50%);
+} */
+
+
+
+
+
+
+
+
+body {
+	background:#EEF4FF;
+	margin:0;
+	font-family:sans-serif;
+	color:#333;
+}
+
+
+.gallery h1 {
+	font-size:clamp(2em, 4vw, 6em);
+}
+
+.gallery p {
+	font-size:clamp(1.4em, 2.5vw, 3.5em);
+	line-height:1.4;
+}
+
+
+.gallery {
+  display:flex;	
+}
+
+.left {
+	width:50%;
+}
+
+.right {
+	height:100vh;
+	width:50%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+    transform: translate(70%,0%);
+}
+
+.middle{
+    position: sticky;
+    transform: translate(100%,5%);
+
+}
+
+.desktopContent {
+	margin:auto;
+	width:80%;
+}
+
+.desktopContentSection {
+	min-height:100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.desktopPhotos {
+	width:1vw;
+	height:30vw;
+	border-radius:20px;
+	position:relative;
+	overflow:hidden;
+	box-shadow:4px 4px 4px rgba(0, 0, 0, 0.4);
+    transform: translate(400%,0%);
+}
+
+.desktopPhoto {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+.middle {
+    width: 30%; 
+    position: relative; 
+    padding: 20 0%; /* Spacing from text box to other elements */
+}
+
+.textScroller {
+    position: sticky;
+    top: 20%;  /* Adjust based on desired start position */
+    transition: transform 0.3s ease-out; /* Smooth transition on scroll */
+}
+
+
+.red {
+	background: crimson;
+}
+
+.green {
+	background:MediumSeaGreen;
+}
+
+@media screen and (max-width: 599px) {
+	.left {
+		display:none;
+	}
+	
+	.right {
+		height:auto;
+		width:100%;
+		align-items:center;	
+	}	
+	
+	.desktopPhotos {
+		display:none;
+	}
+	
+}
+
+
+/* 
+.REE{
+    display: flex;
+    float: left;
+    scale: 70%;
+}
+
+.REEinfo{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(34, 34, 114);
+}
+
+.REEinfo h2{
+    color: white;
+    width: 40%;
+    transform: translate(65%, 75%);
+    border-style:solid;
+    border-radius: 10%;
+    padding: 2%;
+} */
+
+
+
+
+.photo1{
+    width:2%;
+    height: auto;
+}
+.photo2{
+    width:2%;
+    height: auto;
+}
+
+
+
+
+/* .section1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.gallery{
+    height: 200vh;
+}
+
+.img{
+    width: 100%;
+    height:100%;
+    position: relative;
+    background-size: cover;
+    z-index:-1;
+
+    &:nth-of-type(1) {background-image: url('Images/REEmine1.jpeg');}
+    &:nth-of-type(2) {background-image: url('Images/REEmine2.jpeg');}
+    &:nth-of-type(3) {background-image: url('Images/REEmine3.png');}
+    &:nth-of-type(4) {background-image: url('Images/REEmine4.jpeg');}
+    &:nth-of-type(5) {background-image: url('Images/REEmine5.jpeg');}
+    &:nth-of-type(6) {background-image: url('Images/REEmine6.jpeg');}
+    &:nth-of-type(7) {background-image: url('Images/REEmine7.jpeg');}
+    &:nth-of-type(8) {background-image: url('Images/REEmine8.jpeg');}
+    &:nth-of-type(9) {background-image: url('Images/REEmine9.jpeg');}
+
+
+    &:before{
+        content:'';
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        z-index:4;
+        top: 0;
+        left: 0;
+    }
+} */
+
+
+
+
+
+
+
+
+
+.REEmining{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(34, 34, 114);
+}
+
+.REEmining h2{
+    color: white;
+    width: 40%;
+    transform: translate(65%, 75%);
+    border-style:solid;
+    border-radius: 10%;
+    padding: 2%;
+}
+
+#myChart{
+    position: relative;
+    scale: 70%;
+    margin-top: 20%;
+    height: 100vh;
+
+}
