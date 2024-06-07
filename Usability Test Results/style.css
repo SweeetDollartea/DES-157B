@@ -1,0 +1,64 @@
+html, body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color:antiquewhite;
+    scroll-behavior: none;
+    width: 100%;
+    height: 100%;
+
+}
+
+.yo{
+
+    color: black;
+    border: black;
+    border-radius: 10%;
+    border-color: blue;
+    width: 50%;
+    border-width: 4%;
+    
+    top: 50%;
+    left: 50%;
+
+    padding:3%;
+    font-size:x-large;
+    border: 0.5rem outset pink;
+
+    transform: translateX(40%);
+    background-color:rgb(255, 186, 186);
+}
+
+.yo:hover{
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+}
+
+.up{
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+    color: black;
+    border: black;
+    border-radius: 10%;
+    border: solid;
+    border-color: blue;
+    width: 50%;
+    border-width: 4%;
+
+
+    padding:3%;
+    font-size:x-large;
+    border: 0.5rem outset pink;
+    transform: translateX(40%);
+    background-color:rgb(255, 186, 186)
+
+
+}
+
+.up:hover{
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+}
