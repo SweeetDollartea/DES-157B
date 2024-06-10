@@ -25,9 +25,9 @@ body {
     text-align: center;
     display: flex;
     justify-content: space-around;  
-    
     margin:0;
 	color:#333;
+
 }
   
 .intro{
@@ -103,6 +103,32 @@ body {
 	height:100%;
 }
 
+.iphone{
+	justify-content: center;
+	margin: 0;
+	scale: 20%;
+	transform: translate(-115%,-180%);
+}
+
+.iphonesinside{
+	justify-content: center;
+	margin: 0;
+	scale: 20%;
+	transform: translate(-115%,-180%);
+}
+
+.desktoptext{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	transform: translateY(300%);
+
+}
+
+.desktopContentSectioncolors{
+	text-align: left;
+}
+
 .red {
 	background: crimson;
 }
@@ -138,4 +164,150 @@ body {
 		display:block;
 	}
 	
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins';
+}
+.wrapper {
+    overflow-x: hidden;
+    position: relative;
+
+	width: 100vw;
+}
+* {
+    box-sizing: border-box;
+}
+
+svg {
+    position: absolute;
+    top: 12em;
+    left: 10vw;
+    width: 50vw; 
+	max-width: 100%;
+
+    .mask {
+        width: 0;
+    }
+}
+
+.container {
+    display: flex;
+    width: 300vw;
+	flex-wrap: nowrap;
+	width: 100%;
+	overflow-x: auto;
+
+    .col {
+        display: flex;
+        gap: 3em;
+        
+        p {
+            font-size: .8rem;
+        }
+    }
+
+    section {
+        width: 100vw;
+        padding: 20vw 10vw;
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+            width: 50vw;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 3em;
+            width: 100%;
+            height: 300px;
+            padding: 0;
+
+            li {
+                background: white;
+                border-radius: .3em;
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+section {
+    height: 100vh;
+
+}
+
+.container section {
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    width: 350%;
+    height: auto;
+    max-height: 250%; 
+    object-fit: cover; 
+}
+
+
+.cobalt1{
+	transform: translate(-9%,16%);
+	scale: 120%;
+}
+.cobalt2{
+	transform: translate(40%,15%)
+}
+.cobalt3{
+	transform: translate(80%,15%);
+}
+
+
+.graph{
+	background-color: lightblue;
+}
+
+.graph h1{
+	display: flex;
+	color: black;
+	text-align: center;
+	font-size: 300%;
+	justify-content: space-around;
+	transform: translateY(650%);
+
+	transform-origin: center;
+
+}	
+
+
+#myChart{
+    position: absolute;
+    scale: 70%;
+    height: 100vh;
+	display: flex;
+	justify-content: space-around;
+
+	transform-origin: center;
+    display: block;
+	visibility: hidden;
+	max-width: 100%;
+}
+
+
+/* wyo */
+
+#white-page{
+    color: white;
 }

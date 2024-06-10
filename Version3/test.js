@@ -116,6 +116,169 @@ details.forEach((detail, index)=> {
 })
 
 
+
+
+
+
+
+const container = document.querySelector(".container");
+const sections = gsap.utils.toArray(".container section");
+const texts = gsap.utils.toArray(".anim");
+const mask = document.querySelector(".mask");
+
+let scrollTween = gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".container",
+    pin: true,
+    scrub: 1,
+    end: "+=3000",
+  }
+});
+
+console.log(1 / (sections.length - 1))
+
+
+gsap.to(mask, {
+  width: "100%",
+  scrollTrigger: {
+    trigger: ".wrapper",
+    start: "top left",
+    scrub: 1,
+  }
+});
+
+sections.forEach((section) => {
+  let text = section.querySelectorAll(".anim");
+  
+  if(text.length === 0)  return 
+  
+  gsap.from(text, {
+    y: -130,
+    opacity: 0,
+    duration: 2,
+    ease: "elastic",
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: section,
+      containerAnimation: scrollTween,
+      start: "left center",
+    }
+  });
+});
+
+
+
+gsap.to('.graph h1', {
+  scale:350,
+  stagger: 1,
+  duration: 3,
+  scrollTrigger: {
+    trigger: '.graph',
+    pin: true,
+    end: `+=${innerHeight * 1.3}`,
+    scrub: 2,
+    toggleActions: "restart pause reverse pause"
+  }
+});
+
+///
+
+
+function initChart() {
+  const ctx = document.getElementById('myChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['2023', '2025', '2030', '2035', '2040', '2045','2050'],
+      datasets: [{
+        label: 'Demand of Predicted Use of REE in Kilotons',
+        data: [92.62, 104.72, 133.48, 153.46, 169.04, 183.99, 200.21],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+}
+
+initChart();
+
+gsap.to('#myChart', {
+  autoAlpha: 1, 
+  scrollTrigger: {
+    trigger: '.graph',
+    start: "top top", 
+    end: "bottom bottom", 
+    onEnter: () => {
+      setTimeout(() => {
+        gsap.to('#myChart', { autoAlpha: 1 });
+      }, 1000); 
+    },
+  }
+});
+
+gsap.to('#myChart', {
+  autoAlpha: 0, 
+  scrollTrigger: {
+    trigger: '.graph',
+    start: "top top", 
+    end: "bottom bottom", 
+    onLeave: () => {
+      gsap.to('#myChart', { autoAlpha: 0 });
+    },
+  }
+});
+
+
+gsap.to('.graph h1', {
+  scale: 1, // Reset scale to normal
+  duration: 3,
+  scrollTrigger: {
+    trigger: '#red-section',
+    start: "top bottom", // Trigger when the top of red section hits the bottom of the viewport
+    end: "top top", // End when the top of red section hits the top of the viewport
+    scrub: true,
+    toggleActions: "restart pause reverse pause"
+  }
+});
+
+
+const tl = gsap.timeline({
+  scrollTrigger: {
+      trigger: "#chart-section",
+      start: "top center",  
+      end: "bottom bottom",  
+      scrub: true,  
+  }
+});
+
+tl.to("#chart-section", {
+  scale: 0.5,  
+  autoAlpha: 0,  
+  ease: "none"
+});
+
+tl.from("#white-page", {
+  y: 500,  
+  autoAlpha: 0,  
+  ease: "none"
+}, "-=0.5"); 
+
+
+
+
+//////
+
+
+
+
   });
 
 

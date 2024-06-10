@@ -1,0 +1,412 @@
+*{
+    padding:0;
+    margin:0;
+    color:#fff;
+  }
+
+
+body {
+    background-color:#000000;
+    text-align: center;
+
+    justify-content: space-around;  
+    margin:0;
+    padding: 0;
+	color:#333;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+  
+.intro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #030303;
+    height: 100vh;
+}
+
+.intro h1{
+    font-size: 50px;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+}
+
+.spacer {
+	width:100%;
+	height:50vh;
+	background:#ddd;
+}
+
+.gallery h1 {
+	font-size:clamp(2em, 4vw, 6em);
+}
+
+.gallery p {
+	font-size:clamp(1.4em, 2.5vw, 3.5em);
+	line-height:1.4;
+}
+
+.gallery {
+  display:flex;	
+}
+
+.left {
+	width:50%;
+}
+
+.right {
+	height:100vh;
+	width:50%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.desktopContent {
+	margin:auto;
+	width:80%;
+}
+
+.desktopContentSection {
+	min-height:100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.desktopPhotos {
+	width:40vw;
+	height:40vw;
+	border-radius:20px;
+	position:relative;
+	overflow:hidden;
+	box-shadow:4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.desktopPhoto {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+.iphone{
+	justify-content: center;
+	margin: 0;
+	scale: 20%;
+	transform: translate(-115%,-180%);
+}
+
+.iphonesinside{
+	justify-content: center;
+	margin: 0;
+	scale: 20%;
+	transform: translate(-115%,-180%);
+}
+
+.desktoptext{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	transform: translateY(300%);
+
+}
+
+.desktopContentSectioncolors{
+	text-align: left;
+}
+
+.red {
+	background: crimson;
+}
+
+.green {
+	background:MediumSeaGreen;
+}
+
+.blue {
+	background:dodgerblue;
+}
+
+.pink{
+	background:deepPink;
+}
+
+@media screen and (max-width: 599px) {
+	.left {
+		display:none;
+	}
+	
+	.right {
+		height:auto;
+		width:100%;
+		align-items:center;	
+	}	
+	
+	.desktopPhotos {
+		display:none;
+	}
+	
+	.mobileContent {
+		display:block;
+	}
+	
+}
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins';
+}
+.wrapper {
+    overflow-x: hidden;
+    position: relative;
+
+	width: 100vw;
+}
+* {
+    box-sizing: border-box;
+}
+
+svg {
+    position: absolute;
+    top: 12em;
+    left: 10vw;
+    width: 50vw; 
+	max-width: 100%;
+
+}
+
+.container {
+    display: flex;
+    width: 300vw;
+	flex-wrap: nowrap;
+	width: 100%;
+	overflow-x: auto;
+
+    .col {
+        display: flex;
+        gap: 3em;
+        
+        p {
+            font-size: .8rem;
+        }
+    }
+
+    section {
+        width: 100vw;
+        padding: 20vw 10vw;
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+            width: 50vw;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 3em;
+            width: 100%;
+            height: 300px;
+            padding: 0;
+
+            li {
+                background: white;
+                border-radius: .3em;
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+section {
+    height: 100vh;
+
+}
+
+.container section {
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    width: 350%;
+    height: auto;
+    max-height: 250%; 
+    object-fit: cover; 
+}
+
+
+.cobalt1{
+	transform: translate(-9%,16%);
+	scale: 120%;
+}
+.cobalt2{
+	transform: translate(40%,15%)
+}
+.cobalt3{
+	transform: translate(80%,15%);
+}
+
+.graph{
+	background-color: lightblue;
+    height: 100vh;
+}
+
+.graph h1{
+	display: flex;
+	color: black;
+	text-align: center;
+	font-size: 300%;
+	justify-content: space-around;
+	transform: translateY(650%);
+
+	transform-origin: center;
+    transform: translateY(100%);
+}	
+
+
+#myChart{
+    position: absolute;
+    scale: 70%;
+    height: 100vh;
+	display: flex;
+	justify-content: space-around;
+
+	transform-origin: center;
+    display: block;
+	max-width: 100%;
+}
+
+
+
+#white-page{
+    color: white;
+}
+
+
+/* 
+@media screen and (min-width: 1440px) {
+    body {
+        max-width: 100%;
+        margin: auto; 
+
+    }
+
+    .intro h1, .gallery h1 {
+        font-size: clamp(3rem, 4vw, 5rem); 
+    }
+
+    .desktopContent {
+        padding: 2rem;
+        margin: 0 auto;
+        max-width: 1600px; 
+    }
+
+    .desktopPhotos {
+        width: 35vw; 
+        height: 35vw;
+    }
+
+    .desktopPhoto img {
+        width: 100%;
+        height: auto; 
+        scale:35%;
+    }
+} */
+
+
+iframe {
+    width: 100%;  
+    height: 600px; 
+    border: none; 
+    background-color: white;
+}
+
+.companies{
+    background-color: white;
+    height: 10vh;
+
+}
+
+.companies p{
+    color: black;
+    transform: translateY(200%);
+    font-size: 150%;
+}
+
+.comp{
+    display: flex;
+    background-color: white;
+    height: 80vh;
+}
+
+.comp img{
+    display: flex;
+    display: inline;
+    scale: 80%;
+    transform: translate(16%, -10%);
+}
+
+.futureapple{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.futureapple h1{
+    padding: 5%;
+    font-size: 230%;
+}
+
+.apple{
+    max-width: 70%;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(22%);
+
+}
+
+.textfut{
+    margin-top: 3%;
+    font-size: 20px;
+    text-align: left;
+    max-width: 40%;
+  }
+
+.futuretesla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tesla{
+    max-width: 70%;
+    border-radius: 5%;
+}
+
+.futuretoyota{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.toyota{
+    max-width: 60%;
+    border-radius: 5%;
+}
