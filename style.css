@@ -122,6 +122,18 @@ header h2.light{
     font-size: 80%;
 }
 
+.listh4.light, .list ul li.light {
+  color: black;
+}
+
+section.list ul li a {
+  color: white; 
+}
+
+section.list ul li a:hover {
+  color: lightblue; 
+}
+
 .list ul li.light {
     padding: 2%;
     margin: 4%;

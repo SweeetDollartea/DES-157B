@@ -19,17 +19,10 @@
         headerTitle.classList.toggle('light');
         headerTitle2.classList.toggle('light');
 
-        listH4.classList.toggle('light');
 
-        // listH3s.forEach(function(h3) {
-        //     h3.classList.toggle('light');
-        // });
-
-        // listLis.forEach(function(li) {
-        //     li.classList.toggle('light');
-        // });
     });
 })();
+
 
 
 
